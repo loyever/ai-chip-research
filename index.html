@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI算力芯片研究报告</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <!-- 替换为国内CDN -->
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/tailwindcss/3.4.1/tailwind.min.js"></script>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/Chart.js/4.4.8/chart.umd.min.js"></script>
     <style>
         .nav-active {
-            @apply bg-blue-700 text-white;
+            background-color: #1d4ed8;
+            color: white;
         }
         .report-section {
             display: none;
@@ -32,9 +34,13 @@
         tr:nth-child(even) {
             background-color: #f9fafb;
         }
+        * {
+            font-family: system-ui, -apple-system, sans-serif;
+        }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50">
+
     <!-- 顶部导航 -->
     <header class="bg-blue-600 text-white shadow-lg">
         <div class="container mx-auto px-4 py-4">
